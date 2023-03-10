@@ -5,9 +5,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  max-width: 100vw;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#pageWrapper {
+  height: calc(100vh - 100px);
+  color: white;
+}
+
+.backgroundImage {
+   background-image: url(./components/assets/images/workshop.JPG);
+  /* background-position: center;
+  object-fit: cover; */
+  height:100%; 
+  /* width:  100px; 
+  height: 200px;  */
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+
+
+#nav-container {
+  height: 100px;
+  order: 2;
+  z-index: 3;
+}
+
+nav {
+  height: 100px;
+  background-color: black;
+  position: relative;
+  /* transition: background-color 5s, visibility 5s;
+  visibility: hidden; */
+}
+
+nav img {
+  filter: invert(100%);
+  transition: filter 5ss;
+  height: 100px;
+  width: 100px;
+}
+
+.nav-border {
+  border-top: 5px dashed white;
+  width: 80vw;
+  display: block;
 }
