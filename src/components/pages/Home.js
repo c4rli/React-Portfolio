@@ -1,30 +1,37 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div id="pageWrapper" className="container-fluid p-0">
-      <div className="backgroundImage">
-        <div className="row justify-content-center text-center w-100">
-            <h1>carl[i]++</h1>
-            <p>by carli navarro</p>
-       </div>
-        <div className="row justify-content-end align-items-center w-100">
+    <div id="" className="container-fluid pageWrapper">
+      <div className="backgroundImage d-flex flex-column">
+
+        <div id="title" className="row justify-content-center text-center w-100 pt-4">
+          <h1>carl[í]++</h1>
+          <p>by carli navarro</p>
+        </div>
+
+        <div className="row justify-content-end align-items-center w-100 flex-grow-1">
           <div className="col col-12 col-md-6 px-5">
-            <h2>Made by carli.</h2>
+            <h2>hello, world.</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-              varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-              Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-              imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum
-              ligula in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare
-              elit. Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-              consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
+              Welcome!
+              Here, you'll find a showcase of my front-end development and programming projects.
+              As a passionate developer, I'm excited to share my work and skills with you.
+              If you're curious about my projects, I invite you to explore my portfolio and get a glimpse into the kind of things I make.
             </p>
+
             <div className="d-flex justify-content-evenly">
-              <button>carli</button>
-              <button>projects</button>
-              <button>contact</button>
+              <Link to="about" className="w-25">
+                <button className="btn btn-light homeBtn">carli</button>
+              </Link>
+              <Link to="projects" className="w-25">
+                <button className="btn btn-light homeBtn">projects</button>
+              </Link>
+              <Link to="contact" className="w-25">
+                <button className="btn btn-light homeBtn">contact</button>
+              </Link>
+
             </div>
           </div>
         </div>
