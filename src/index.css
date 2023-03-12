@@ -83,3 +83,10 @@ nav img {
   width: 80vw;
   display: block;
 }
+
+@media (max-width: 768px) { 
+  #projectsWrapper{
+    height: 100%;
+  }
+  
+ }

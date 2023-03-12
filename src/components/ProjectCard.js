@@ -4,16 +4,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
-function ProjectCard() {
+function ProjectCard({id, title, description, technologies, imagePath}) {
     return (
         <Col>
             <Card>
-              <Card.Img variant="top" src="https://placehold.co/100x100?text=Hello+World" />
+              <Card.Img variant="top" src={imagePath} />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>{title}</Card.Title>
                 <Card.Text>
-                  A short description of what this app does, very brief and simple. <br/>
-                  Technologies: symbol symbol symbol
+                  {description}<br/>
+                  Technologies: {technologies}
                 </Card.Text>
               </Card.Body>
             </Card>
