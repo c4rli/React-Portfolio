@@ -8,7 +8,7 @@ function NavBar() {
       <nav className="navbar navbar-expand navbar-dark">
         <a className="navbar-brand" href="/">
           <img src={logo} className="d-inline-block align-middle" alt="carli n. logo" />
-          carl[i]++
+          <span id='brandName'>carl[i]++</span>
         </a>
 
 

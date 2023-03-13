@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   max-width: 100vw;
+  min-width: 400px;
 }
 
 code {
@@ -22,10 +23,15 @@ code {
 
 #projectCards {
   color: black;
+  width: 85%;
+}
+
+.card {
+  border-radius: 0;
 }
 
 .backgroundImage {
-   background-image: url(./components/assets/images/workshop.JPG);
+   /* background-image: url(./components/assets/images/workshop.JPG); */
   /* background-position: center;
   object-fit: cover; */
   height:100%; 
@@ -36,10 +42,26 @@ code {
   background-repeat: no-repeat;
 }
 
+#backgroundImageHome {
+  background-image: url(./components/assets/images/workshop.JPG);
+
+}
+
+#backgroundImageProjects {
+  background-image: url(./components/assets/images/code-hero2.jpg);
+  /* background-color: rgb(27, 15, 43); */
+}
+
 .card-img-top {
   width: 100%;
-  height: 10vw;
+  height: 20vw;
   object-fit: cover;
+  max-height: 200px;
+  object-position: top;
+}
+
+.card, .card-img-top {
+  border-radius: 0 !important;
 }
 
 #title {
@@ -53,9 +75,21 @@ code {
   border-radius: 0px !important;
 }
 
+.projectButtons{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #000000;
+}
 
+.projectButtonsWrapper{
+  /* display: none; */
+}
 
-
+.projectButtonsWrapper:hover{
+  /* display: unset; */
+}
 
 #nav-container {
   height: 100px;
@@ -84,9 +118,35 @@ nav img {
   display: block;
 }
 
+.langIcons {
+  font-size: xx-large;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+}
+
+.projImgWrapper {
+  position: relative;
+}
+
+.projImgWrapper i {
+  margin: 3px;
+}
+
 @media (max-width: 768px) { 
-  #projectsWrapper{
+   #projectsWrapper{
     height: 100%;
   }
-  
+  .card-img-top {
+    height: 40vw;
+    max-height: unset;
+  }
  }
+
+ @media (max-width: 576px) { 
+ 
+  #brandName {
+    display: none;
+  }
+  }

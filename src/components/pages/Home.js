@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div id="" className="container-fluid pageWrapper">
-      <div className="backgroundImage d-flex flex-column">
+      <div id="backgroundImageHome" className="backgroundImage d-flex flex-column">
 
         <div id="title" className="row justify-content-center text-center w-100 pt-4">
           <h1>carl[í]++</h1>
-          <p>by carli navarro</p>
         </div>
 
         <div className="row justify-content-end align-items-center w-100 flex-grow-1">

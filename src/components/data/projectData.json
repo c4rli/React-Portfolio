@@ -3,48 +3,60 @@
         "id": "0",
         "title": "5 Day Weather Dashboard",
         "description": "Dashboard showing weather for 5 days",
-        "technologies" :["","","",""],
-        "imagePath": ""
+        "technologies" :["javascript","bootstrap"],
+        "imagePath": "",
+        "githubLink": "https://github.com/c4rli/5-Day-Weather-Dashboard",
+        "deployedLink":"https://c4rli.github.io/5-Day-Weather-Dashboard/"
 
     },
     {
         "id": "1",
-        "title": "5 Day Weather Dashboard",
+        "title": "Favorite Music Dashboard",
         "description": "Dashboard showing weather for 5 days",
-        "technologies" :["","","",""],
-        "imagePath": ""
+        "technologies" :["javascript","bootstrap"],
+        "imagePath": "",
+        "githubLink": "https://github.com/c4rli/favourite-music-dashboard",
+        "deployedLink":"https://cedekpoole.github.io/favourite-music-dashboard/"
 
     },
     {
         "id": "2",
-        "title": "5 Day Weather Dashboard",
+        "title": "README Generator",
         "description": "Dashboard showing weather for 5 days",
-        "technologies" :["","","",""],
-        "imagePath": ""
+        "technologies" :["nodejs","bootstrap"],
+        "imagePath": "./components/assetsimages/projects/READMEGenerator.png",
+        "githubLink": "https://github.com/c4rli/README-generator",
+        "deployedLink":""
 
     },
     {
         "id": "3",
-        "title": "5 Day Weather Dashboard",
+        "title": "Password Generator",
         "description": "Dashboard showing weather for 5 days",
-        "technologies" :["","","",""],
-        "imagePath": ""
+        "technologies" :["javascript","bootstrap"],
+        "imagePath": "",
+        "githubLink": "https://github.com/c4rli/Password-Generator",
+        "deployedLink":"https://c4rli.github.io/Password-Generator"
 
     },
     {
         "id": "4",
-        "title": "5 Day Weather Dashboard",
+        "title": "JavaScript Quiz",
         "description": "Dashboard showing weather for 5 days",
-        "technologies" :["","","",""],
-        "imagePath": ""
+        "technologies" :["javascript","bootstrap"],
+        "imagePath": "",
+        "githubLink": "https://github.com/c4rli/JavaScript-Quiz-Webapp",
+        "deployedLink":"https://c4rli.github.io/JavaScript-Quiz-Webapp/"
 
     },
     {
         "id": "5",
-        "title": "5 Day Weather Dashboard",
+        "title": "Tarot",
         "description": "Dashboard showing weather for 5 days",
-        "technologies" :["","","",""],
-        "imagePath": ""
+        "technologies" :["python"],
+        "imagePath": "",
+        "githubLink": "https://github.com/c4rli/Tarot",
+        "deployedLink":""
 
     }
 
