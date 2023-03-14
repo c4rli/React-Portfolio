@@ -24,6 +24,7 @@ code {
 #projectCards {
   color: black;
   width: 85%;
+  flex-grow: 1;
 }
 
 .card {
@@ -52,6 +53,10 @@ code {
   /* background-color: rgb(27, 15, 43); */
 }
 
+#backgroundImageContact{
+  background-image: url(./components/assets/images/keyboard-hero2.png);
+}
+
 .card-img-top {
   width: 100%;
   height: 20vw;
@@ -62,6 +67,14 @@ code {
 
 .card, .card-img-top {
   border-radius: 0 !important;
+}
+
+.contactCard {
+  width: 50%;
+  height: 100% !important;
+}
+#contactCards {
+  width: 85%;
 }
 
 #title {
@@ -134,6 +147,10 @@ nav img {
   margin: 3px;
 }
 
+#contactCardWrapper {
+  flex-grow: 1;
+}
+
 @media (max-width: 768px) { 
    #projectsWrapper{
     height: 100%;
@@ -142,7 +159,11 @@ nav img {
     height: 40vw;
     max-height: unset;
   }
+  .contactCard {
+   width: 85% !important;
+  }
  }
+
 
  @media (max-width: 576px) { 
  

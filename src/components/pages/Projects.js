@@ -11,31 +11,20 @@ import projectData from '../data/projectData.json'
 function Projects() {
 
   const projectsArray = projectData.map(
-    project => <ProjectCard {...project } key ={project.id}/>
-)
+    project => <ProjectCard {...project} key={project.id} />
+  )
 
   return (
-      <div id="projectsWrapper" className="pageWrapper ">
-        <div id="backgroundImageProjects" className="backgroundImage d-flex flex-column">
-        <div className="justify-content-center text-center w-100 pt-4"><h1>Projects</h1></div>
-    {/* <Container fluid className="pageWrapper"> */}
-      {/* <h1>Projects</h1> */}
-        {/* <Card className="p-4 m-5"> */}
+    <div id="projectsWrapper" className="pageWrapper ">
+      <div id="backgroundImageProjects" className="backgroundImage d-flex flex-column">
+        <div className="justify-content-center text-center w-100 py-4"><h2>Projects</h2></div>
         <Container fluid id="projectCards" className="p-0 d-flex align-items-center justify-content-center">
-          <Row xs={1} md={3} className="g-4 my-4">
-            {/* <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard /> */}
+          <Row xs={1} md={3} className="g-4 mb-4">
             {projectsArray}
           </Row>
         </Container>
-        {/* </Card> */}
-    {/* </Container> */}
-    </div>
       </div>
+    </div>
   );
 }
 

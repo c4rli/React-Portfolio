@@ -98,8 +98,6 @@ function ProjectCard({ id, title, description, technologies, imagePath, githubLi
           <Card.Title>{title}</Card.Title>
           <Card.Text>
             {description}
-            {/* <i className={projectLanguages[technologies]}></i> */}
-
           </Card.Text>
         </Card.Body>
       </Card>
