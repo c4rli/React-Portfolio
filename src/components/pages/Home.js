@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+
+// Renders homepage
 function Home() {
   return (
     <div id="" className="container-fluid pageWrapper">
       <div id="backgroundImageHome" className="backgroundImage d-flex flex-column">
 
-        <div id="title" className="row justify-content-center text-center w-100 pt-4">
+        <div id="" className=" titleWrapper row justify-content-center text-center w-100 pt-4">
           <h1>carl[í]++</h1>
         </div>
 
@@ -21,14 +23,14 @@ function Home() {
             </p>
 
             <div className="d-flex justify-content-evenly">
-              <Link to="about" className="w-25">
-                <button className="btn btn-light homeBtn">carli</button>
+              <Link to="about" className="w-25 disabled btn btn-light homeBtn">
+                carli
               </Link>
-              <Link to="projects" className="w-25">
-                <button className="btn btn-light homeBtn">projects</button>
+              <Link to="projects" className="w-25 btn btn-light homeBtn">
+                projects
               </Link>
-              <Link to="contact" className="w-25">
-                <button className="btn btn-light homeBtn">contact</button>
+              <Link to="contact" className="w-25 btn btn-light homeBtn">
+                contact
               </Link>
 
             </div>

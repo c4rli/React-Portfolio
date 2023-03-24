@@ -1,14 +1,8 @@
 import React from "react";
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { Col, Card, Button } from 'react-bootstrap'
 
 import READMEGenerator from './assets/images/projects/READMEGenerator.png';
 import FavouriteMusicDashboard from './assets/images/projects/FavouriteMusicDashboard.png';
@@ -17,10 +11,8 @@ import PasswordGenerator from './assets/images/projects/PasswordGenerator.png';
 import JavascriptQuiz from './assets/images/projects/JavascriptQuiz.png'
 import Tarot from './assets/images/projects/Tarot.png'
 
-
-
-
-function ProjectCard({ id, title, description, technologies, imagePath, githubLink, deployedLink }) {
+// Generate a project card using the props passed into it from Contact Form
+function ProjectCard({ id, title, description, technologies, githubLink, deployedLink }) {
 
   const [isHover, setIsHover] = useState(false);
 
@@ -58,14 +50,14 @@ function ProjectCard({ id, title, description, technologies, imagePath, githubLi
 
   } else {
     if (deployedLink){
-      deployedButton = <a href={deployedLink} target="_blank" className="w-100">
+      deployedButton = <a href={deployedLink} target="_blank" rel="noreferrer" className="w-100">
             <Button variant="primary" size="lg" className="homeBtn">
               <i className={projectLanguages["firefox"]}></i> Deployed App
             </Button>
           </a>
     }
     if (githubLink){
-      githubButton = <a href={githubLink} target="_blank" className="w-100">
+      githubButton = <a href={githubLink} target="_blank" rel="noreferrer" className="w-100">
             <Button variant="secondary" size="lg" className="homeBtn">
               <i className={projectLanguages["github"]}></i> Github Repo
             </Button>

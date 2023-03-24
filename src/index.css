@@ -18,8 +18,33 @@ code {
 .pageWrapper {
   height: calc(100vh - 100px);
   color: white;
-  padding:0 !important;
+  padding: 0 !important;
 }
+
+/* Page background images */
+
+.backgroundImage {
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+#backgroundImageHome {
+  background-image: url(./components/assets/images/workshop.JPG);
+
+}
+
+#backgroundImageProjects {
+  background-image: url(./components/assets/images/code-hero2.jpg);
+}
+
+#backgroundImageContact {
+  background-image: url(./components/assets/images/keyboard-hero2.png);
+}
+
+/* Cards */
 
 #projectCards {
   color: black;
@@ -31,32 +56,6 @@ code {
   border-radius: 0;
 }
 
-.backgroundImage {
-   /* background-image: url(./components/assets/images/workshop.JPG); */
-  /* background-position: center;
-  object-fit: cover; */
-  height:100%; 
-  /* width:  100px; 
-  height: 200px;  */
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-#backgroundImageHome {
-  background-image: url(./components/assets/images/workshop.JPG);
-
-}
-
-#backgroundImageProjects {
-  background-image: url(./components/assets/images/code-hero2.jpg);
-  /* background-color: rgb(27, 15, 43); */
-}
-
-#backgroundImageContact{
-  background-image: url(./components/assets/images/keyboard-hero2.png);
-}
-
 .card-img-top {
   width: 100%;
   height: 20vw;
@@ -65,7 +64,8 @@ code {
   object-position: top;
 }
 
-.card, .card-img-top {
+.card,
+.card-img-top {
   border-radius: 0 !important;
 }
 
@@ -73,22 +73,27 @@ code {
   width: 50%;
   height: 100% !important;
 }
+
 #contactCards {
   width: 85%;
 }
 
 #title {
   position: absolute;
-  top:100;
+  top: 100;
+}
+
+.titleWrapper {
+  position: absolute;
+  top: 100;
 }
 
 .homeBtn {
-  min-width: 100%;
   font-size: 2em;
   border-radius: 0px !important;
 }
 
-.projectButtons{
+.projectButtons {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -96,13 +101,12 @@ code {
   background-color: #000000;
 }
 
-.projectButtonsWrapper{
-  /* display: none; */
+.list-group a,
+.list-group li {
+  text-decoration: none;
 }
 
-.projectButtonsWrapper:hover{
-  /* display: unset; */
-}
+/* Navigation */
 
 #nav-container {
   height: 100px;
@@ -139,6 +143,8 @@ nav img {
   padding: 5px;
 }
 
+/* Project Image */
+
 .projImgWrapper {
   position: relative;
 }
@@ -151,23 +157,31 @@ nav img {
   flex-grow: 1;
 }
 
-@media (max-width: 768px) { 
-   #projectsWrapper{
+/* Responsiveness and Media Queries */
+
+@media (max-width: 768px) {
+  #projectsWrapper {
     height: 100%;
   }
+
   .card-img-top {
     height: 40vw;
     max-height: unset;
   }
+
   .contactCard {
-   width: 85% !important;
+    width: 85% !important;
   }
- }
 
+  .titleWrapper {
+    position: relative;
+    top: 0;
+  }
+}
 
- @media (max-width: 576px) { 
- 
+@media (max-width: 576px) {
+
   #brandName {
     display: none;
   }
-  }
+}

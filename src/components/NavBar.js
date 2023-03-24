@@ -2,9 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from './assets/images/logo.png'
 
+
+// Navigation bar with links
 function NavBar() {
   return (
-    <div id="nav-container">
+    <header id="nav-container">
       <nav className="navbar navbar-expand navbar-dark">
         <a className="navbar-brand" href="/">
           <img src={logo} className="d-inline-block align-middle" alt="carli n. logo" />
@@ -27,6 +29,8 @@ function NavBar() {
             className={({ isActive }) =>
               isActive ? 'nav-link active' : 'nav-link'
             }
+            onClick={e => e.preventDefault()}
+            style={{ opacity: '0.5' }}
           >
             About
           </NavLink>
@@ -49,7 +53,7 @@ function NavBar() {
           </NavLink>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 
